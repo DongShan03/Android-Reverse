@@ -1,0 +1,32 @@
+https://aweme.snssdk.com/aweme/v2/comment/list/
+
+
+请求体
+    aweme_id
+    aweme_author
+    iid
+    openudid
+    uuid
+    cdid        uuid.uuid4()
+    device_id
+    oaid        手机虚拟ID  可为空
+
+
+
+请求头
+    x-gorgon : 0404206d00008233aac18c1c87d568c29d99ef33417156f976c0
+    x-khronos :1671962558
+    cookie : store-region-src=did; store-region=cn-he; install_id=84020330500654; ttreq=1$896c0d5492e54aa055b2ca4194798b385081fc92; odin_tt=6057a0239e2f5e0792e5b73bdcbecc931f37db108c170a5fb39d323932ce8cac6b24b2317162ba3e8713ab0172f7b2e7cffeb0860c4e1bc2959d33e624db8f23
+    x-ss-req-ticket:  1671962558327
+
+
+
+at java.util.UUID.randomUUID(Native Method)
+at com.ss.android.deviceregister.d.a$a.a(Cdid.java:17104951)
+at com.ss.android.deviceregister.d.f.b(Singleton.java:17039393)
+at com.ss.android.deviceregister.d.a.a(Cdid.java:17039391)
+at com.ss.android.common.applog.NetUtil.putCommonParamsWithLevel(NetUtil.java:50856620)
+at com.ss.android.common.applog.NetUtil.putCommonParams(NetUtil.java:33619970)
+at com.ss.android.ugc.aweme.net.interceptor.CommonParamsInterceptorTTNet.a(CommonParamsInterceptorTTNet.java:17170485)
+at com.ss.android.ugc.aweme.net.interceptor.CommonParamsInterceptorTTNet.intercept(CommonParamsInterceptorTTNet.java:17170538)
+at com.bytedance.retrofit2.intercept.RealInterceptorChain.RealInterceptorChain__proceed$___twin___(RealInterceptorChain.java:17170570)
